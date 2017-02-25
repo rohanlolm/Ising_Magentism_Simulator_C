@@ -26,14 +26,14 @@ The program must be called with one command line argument, the output data filen
 The program can also be called with any combination of 7 options: 
 
 ## Options: 
--m: Set the maximum number of iterations for equilibrium to be reached at a given temperature. Default: 1,000,000,000.
+-m: Set the maximum number of iterations for equilibrium to be reached at a given temperature. Default: 1,000,000,000.   
 -t: Set equilibrium threshold. Equilibrium is found once the relative change in energy is no more than this value ever N time steps, 
-	where N is the number of spins in the lattice (N = DxD). Default 1e-4
--i: Set initial temperature. The maximum and initial temperature of the system in units of J/kb. Default: 3.5
--f: Set final temperature, not inclusive. Final and minimum temperature will be final_temp + temp_step_size Default 0
--s: Set temperature step size as the system is cooled. Default 0.1
--d: Set the data record ratio. This number determines for how long energy and magnetisation values are recorded and averaged to calculate 
+	where N is the number of spins in the lattice (N = DxD). Default 1e-4   
+-i: Set initial temperature. The maximum and initial temperature of the system in units of J/kb. Default: 3.5    
+-f: Set final temperature, not inclusive. Final and minimum temperature will be final_temp + temp_step_size Default 0     
+-s: Set temperature step size as the system is cooled. Default 0.1   
+-d: Set the data record ratio. This number determines for how long energy and magnetisation values are recorded and averaged to   calculate    
 	the macroscopic properties. A value of 2 means macroscopic quantities are calculated by averaging values for the same amount of time 
-	it took to get to equilibrium. A value of 3 would mean values are averaged for twice the time it took to get to equilibrium. Default: 2
+	it took to get to equilibrium. A value of 3 would mean values are averaged for twice the time it took to get to equilibrium. Default: 2    
 -a: Enable state_writer() with ASCII art. This option turns on statewriter() before and after the system is temperature evolved. 
-	This prints out the spin state of each particle and represents this in an ‘ASCII art’ format to visualise domains. 
+	This prints out the spin state of each particle and represents this in an ‘ASCII art’ format to visualise domains.    
